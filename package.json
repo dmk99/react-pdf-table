@@ -1,6 +1,6 @@
 {
   "name": "@david.kucsai/react-pdf-table",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "",
   "main": "main.js",
   "scripts": {
@@ -9,7 +9,7 @@
     "prepublish": "npm run build",
     "test": "./node_modules/.bin/jest",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook -o docs"
   },
   "author": "David Kucsai",
   "license": "MIT",
