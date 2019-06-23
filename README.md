@@ -4,7 +4,8 @@ This library is designed to be used with [@react-pdf/renderer](https://www.npmjs
 
 The goal behind this library is to provide a declarative way of defining tables in the PDF.
 
-NPM: [@david.kucsai/react-pdf-table](https://www.npmjs.com/package/@david.kucsai/react-pdf-table)
+[![npm version](http://img.shields.io/npm/v/@david.kucsai/react-pdf-table.svg?style=flat)](https://npmjs.org/package/@david.kucsai/react-pdf-table "View this project on npm")
+
 
 ## Documentation
 
