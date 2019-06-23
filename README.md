@@ -10,7 +10,7 @@ NPM: [@david.kucsai/react-pdf-table](https://www.npmjs.com/package/@david.kucsai
 
 ### Notes
 
-- Layout is uses `flex` behind the scenes. 
+- Layout uses `flex` behind the scenes. 
 - If `weighting` is not defined for a table cell then it will default to the remaining unassigned weightings.
     - `weighting` should be between 0..1. Preferably adding up to `<= 1`.
 - If you have lots of rows to display it's recommended to batch up the rows and render them on separate pages to ensure 
