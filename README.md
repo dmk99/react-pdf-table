@@ -6,6 +6,11 @@ The goal behind this library is to provide a declarative way of defining tables 
 
 [![npm version](http://img.shields.io/npm/v/@david.kucsai/react-pdf-table.svg?style=flat)](https://npmjs.org/package/@david.kucsai/react-pdf-table "View this project on npm")
 
+To get started run:
+
+```
+npm install @david.kucsai/react-pdf-table
+```
 
 ## Documentation
 

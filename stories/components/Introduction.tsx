@@ -32,7 +32,7 @@ export default class Introduction extends React.PureComponent {
                     <h1>Setup</h1>
 
                     <ol>
-                        <li>Install react-pdf Run <pre>npm install @react-pdf</pre></li>
+                        <li>Install react-pdf Run <pre>npm install @react-pdf/renderer</pre></li>
                         <li>Install react-pdf-table Run <pre>npm install @david.kucsai/react-pdf-table</pre></li>
                         <li>
                             In your PDF document add in your tables.
