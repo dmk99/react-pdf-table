@@ -37,7 +37,7 @@ This example will render a header and one row using the default styling.
             <Page>
                 <Table
                     data={[
-                        {firstName: "John", lastName: "Smith", dob: new Date(2000, 1, 1), country: "Australia", "xxx-0000-0000"}
+                        {firstName: "John", lastName: "Smith", dob: new Date(2000, 1, 1), country: "Australia", phoneNumber: "xxx-0000-0000"}
                     ]}
                 >
                     <TableHeader>
@@ -58,15 +58,15 @@ This example will render a header and one row using the default styling.
                         </TableCell>
                     </TableHeader>
                     <TableBody>
-                        <DataTableCell getContent={(r: DataRow) => r.firstName}/>
-                        <DataTableCell getContent={(r: DataRow) => r.lastName}/>
-                        <DataTableCell getContent={(r: DataRow) => r.dob.toLocaleString()}/>
-                        <DataTableCell getContent={(r: DataRow) => r.country}/>
-                        <DataTableCell getContent={(r: DataRow) => r.phoneNumber}/>
+                        <DataTableCell getContent={(r) => r.firstName}/>
+                        <DataTableCell getContent={(r) => r.lastName}/>
+                        <DataTableCell getContent={(r) => r.dob.toLocaleString()}/>
+                        <DataTableCell getContent={(r) => r.country}/>
+                        <DataTableCell getContent={(r) => r.phoneNumber}/>
                     </TableBody>
                 </Table>
             </Page>
-        </Document>>
+        </Document>
     </PDFViewer>
 ```
 
@@ -80,7 +80,7 @@ This example will render a header and one row using the default styling.
             <Page>
                 <Table
                     data={[
-                        {firstName: "John", lastName: "Smith", dob: new Date(2000, 1, 1), country: "Australia", "xxx-0000-0000"}
+                        {firstName: "John", lastName: "Smith", dob: new Date(2000, 1, 1), country: "Australia", phoneNumber: "xxx-0000-0000"}
                     ]}
                 >
                     <TableHeader textAlign={"center"}>
@@ -101,15 +101,15 @@ This example will render a header and one row using the default styling.
                         </TableCell>
                     </TableHeader>
                     <TableBody>
-                        <DataTableCell weighting={0.3} getContent={(r: DataRow) => r.firstName}/>
-                        <DataTableCell weighting={0.3} getContent={(r: DataRow) => r.lastName}/>
-                        <DataTableCell getContent={(r: DataRow) => r.dob.toLocaleString()}/>
-                        <DataTableCell getContent={(r: DataRow) => r.country}/>
-                        <DataTableCell getContent={(r: DataRow) => r.phoneNumber}/>
+                        <DataTableCell weighting={0.3} getContent={(r) => r.firstName}/>
+                        <DataTableCell weighting={0.3} getContent={(r) => r.lastName}/>
+                        <DataTableCell getContent={(r) => r.dob.toLocaleString()}/>
+                        <DataTableCell getContent={(r) => r.country}/>
+                        <DataTableCell getContent={(r) => r.phoneNumber}/>
                     </TableBody>
                 </Table>
             </Page>
-        </Document>>
+        </Document>
     </PDFViewer>
 ```
 
