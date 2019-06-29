@@ -1,11 +1,11 @@
 {
   "name": "@david.kucsai/react-pdf-table",
-  "version": "0.0.8",
+  "version": "0.1.0",
   "description": "Provides tables for the @react-pdf/renderer.",
   "main": "./lib/index.js",
   "scripts": {
     "generate-barrels": "barrelsby -d src --delete",
-    "build": "rm -r ./lib/* && npm run generate-barrels && tsc",
+    "build": "rm -rf ./lib/* && npm run generate-barrels && tsc",
     "recompile": "tsc",
     "prepublish": "npm run build",
     "storybook": "start-storybook -p 6006",
