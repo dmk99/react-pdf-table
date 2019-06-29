@@ -1,7 +1,7 @@
 import * as React from "react";
-import {View} from "@react-pdf/renderer";
-import {TableBody} from "./TableBody";
 import {TableHeader} from "./TableHeader";
+import {TableBody} from "./TableBody";
+import {View} from "@react-pdf/renderer";
 
 interface TableProps {
     data?: any[];

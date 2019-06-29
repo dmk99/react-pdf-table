@@ -7,9 +7,15 @@ export interface HumanRow {
     country: string;
     city: string;
     phoneNumber: string;
+    randomValues: {
+        one: number,
+        two: number,
+        three: number,
+        four: number
+    }
 }
 
-export function generateRandomData(count: number): HumanRow[] {
+export function generateRandomData(count: number, maxRandomValue: number = 100): HumanRow[] {
     const output: HumanRow[] = [];
 
     for(let i = 0; i < count; i++) {
@@ -19,7 +25,13 @@ export function generateRandomData(count: number): HumanRow[] {
             dob: faker.date.past(100),
             country: faker.address.country(),
             city: faker.address.city(),
-            phoneNumber: faker.phone.phoneNumber()
+            phoneNumber: faker.phone.phoneNumber(),
+            randomValues: {
+                one: Math.ceil(Math.random() * maxRandomValue),
+                two: Math.ceil(Math.random() * maxRandomValue),
+                three: Math.ceil(Math.random() * maxRandomValue),
+                four: Math.ceil(Math.random() * maxRandomValue)
+            }
         })
     }
 

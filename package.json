@@ -1,13 +1,13 @@
 {
   "name": "@david.kucsai/react-pdf-table",
   "version": "0.0.8",
-  "description": "",
-  "main": "main.js",
+  "description": "Provides tables for the @react-pdf/renderer.",
+  "main": "./lib/index.js",
   "scripts": {
-    "build": "rm -r ./lib/* && tsc",
+    "generate-barrels": "barrelsby -d src --delete",
+    "build": "rm -r ./lib/* && npm run generate-barrels && tsc",
     "recompile": "tsc",
     "prepublish": "npm run build",
-    "test": "./node_modules/.bin/jest",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook -o docs"
   },
@@ -28,10 +28,8 @@
     "@storybook/addons": "^5.1.9",
     "@storybook/cli": "^5.1.9",
     "@storybook/react": "^5.1.9",
-    "@types/chai": "^4.1.3",
     "@types/enzyme": "^3.1.10",
     "@types/faker": "^4.1.5",
-    "@types/jest": "^22.2.3",
     "@types/sinon": "^4.3.3",
     "@types/storybook__react": "^4.0.2",
     "babel-core": "^6.26.3",
@@ -39,14 +37,13 @@
     "babel-loader": "^7.1.4",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
-    "chai": "^4.1.2",
+    "barrelsby": "^2.1.1",
     "css-loader": "^3.0.0",
     "enzyme": "^3.10.0",
     "enzyme-adapter-react-16": "^1.14.0",
     "faker": "^4.1.0",
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.2.0",
-    "jest": "^24.8.0",
     "jsdom": "^15.1.1",
     "mini-css-extract-plugin": "^0.7.0",
     "react": "^16.8.6",
@@ -66,29 +63,6 @@
     "LICENSE",
     "main.js"
   ],
-  "jest": {
-    "setupFiles": [
-      "<rootDir>/test-setup.js"
-    ],
-    "moduleFileExtensions": [
-      "ts",
-      "tsx",
-      "js",
-      "jsx",
-      "json",
-      "node"
-    ],
-    "transformIgnorePatterns": [
-      "<rootDir>/node_modules/(?!transpile-me|transpile-me-too).+(js|jsx)$"
-    ],
-    "testEnvironment": "node",
-    "transform": {
-      "^.+\\.(ts|tsx)$": "ts-jest"
-    },
-    "testMatch": [
-      "<rootDir>/src/**/*.spec.(ts|tsx|js|jsx)"
-    ]
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/dmk99/react-pdf-table.git"
