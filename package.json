@@ -1,10 +1,10 @@
 {
   "name": "@david.kucsai/react-pdf-table",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Provides tables for the @react-pdf/renderer.",
   "main": "./lib/index.js",
   "scripts": {
-    "generate-barrels": "barrelsby -d src --delete",
+    "generate-barrels": "barrelsby -d src --delete -e TableRow.tsx",
     "build": "rm -rf ./lib/* && npm run generate-barrels && tsc",
     "recompile": "tsc",
     "prepublish": "npm run build",
@@ -20,14 +20,14 @@
   },
   "devDependencies": {
     "@react-pdf/renderer": "^1.6.2",
-    "@storybook/addon-actions": "^5.1.9",
-    "@storybook/addon-info": "^5.1.9",
-    "@storybook/addon-knobs": "^5.1.9",
-    "@storybook/addon-links": "^5.1.9",
-    "@storybook/addon-options": "^5.1.9",
-    "@storybook/addons": "^5.1.9",
-    "@storybook/cli": "^5.1.9",
-    "@storybook/react": "^5.1.9",
+    "@storybook/addon-actions": "^5.2.0-beta.28",
+    "@storybook/addon-info": "^5.2.0-beta.28",
+    "@storybook/addon-knobs": "^5.2.0-beta.28",
+    "@storybook/addon-links": "^5.2.0-beta.28",
+    "@storybook/addon-options": "^5.2.0-beta.28",
+    "@storybook/addons": "^5.2.0-beta.28",
+    "@storybook/cli": "^5.2.0-beta.28",
+    "@storybook/react": "^5.2.0-beta.28",
     "@types/enzyme": "^3.1.10",
     "@types/faker": "^4.1.5",
     "@types/sinon": "^4.3.3",
@@ -57,6 +57,9 @@
     "webpack": "^4.35.0",
     "webpack-cli": "^3.3.4",
     "webpack-dev-server": "^3.7.2"
+  },
+  "resolutions": {
+    "dfa": "1.1.0"
   },
   "files": [
     "lib",

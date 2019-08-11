@@ -45,13 +45,16 @@ export default class Introduction extends React.PureComponent {
                     library.
                 </p>
                 <p>
+                    <strong>Note: </strong> You should not use TableRow directly.
+                </p>
+                <p>
                     Below is a description of the different components. The text in brackets indicates what the
                     most similar HTML element would be.
                     <br/>
                     <br/>
                     A Table (table) is the main container. This generally passes the data down into the components.
                     <br/>
-                    The TableHeader (tr) contains the title columns, each column is defined by the TableCell (td) children.
+                    The TableHeader (th) contains the title columns, each column is defined by the TableCell (td) children.
                     <br/>
                     The TableBody (tr) contains how the rows need to be displayed. Each column is defined by the
                     DataTableCell (td) children.
