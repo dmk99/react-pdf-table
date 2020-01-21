@@ -20,8 +20,11 @@ export class PdfContainer extends PureComponent<PdfContainerProps> {
             >
                 <Document>
                     <Page
-                        orientation={options("Page: orientation", {portrait: "portrait", landscape: "landscape"}, "portrait", {display: "select"})}
-                        size={this.props.pageSize || "A4"}
+                        orientation={options("Page: orientation", {
+                            portrait: "portrait",
+                            landscape: "landscape"
+                        }, "portrait", {display: "select"})}
+                        size={this.props.pageSize ?? "A4"}
                         style={{
                             margin: 20,
                             paddingRight: 40

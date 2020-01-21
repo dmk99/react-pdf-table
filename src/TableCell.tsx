@@ -30,15 +30,15 @@ export interface TableBorder {
 
 export interface TableCellProps extends TableBorder {
     /**
-     * The weighting of a cell based on the flex layout styles.
+     * The weighting of a cell based on the flex layout style.
      * This value is between 0..1, if not specified 1 is assumed, this will take up the remaining available space.
      */
     weighting?: number;
 
     /**
-     * Extra styling to apply. These will override existing styles with the same key.
+     * Extra styling to apply. These will override existing style with the same key.
      */
-    styles?: ReactPDF.Style[];
+    style?: ReactPDF.Style | ReactPDF.Style[];
 
     /**
      * How to align the text
@@ -61,7 +61,7 @@ export interface TableCellProps extends TableBorder {
  */
 export class TableCell extends React.PureComponent<TableCellProps> {
     render() {
-        let content: any = null;
+        let content: any;
 
         if (typeof this.props.children === "string") {
             content = (
@@ -72,21 +72,32 @@ export class TableCell extends React.PureComponent<TableCellProps> {
         }
 
         const {includeRightBorder} = getDefaultBorderIncludes(this.props);
+        const defaultStyle: ReactPDF.Style = {
+            flex: this.props.weighting ?? 1,
+            // @ts-ignore
+            justifyContent: "stretch",
+            textAlign: this.props.textAlign ?? "left",
+            fontSize: this.props.fontSize ?? (this.props.isHeader === true ? 14 : 12),
+            borderRight: includeRightBorder && "1pt solid black",
+            wordWrap: "break-word",
+            whiteSpace: "pre-wrap"
+        };
+
+        const mergedStyles: ReactPDF.Style[] = [
+            defaultStyle
+        ];
+
+        if (this.props.style !== undefined) {
+            if (Array.isArray(this.props.style)) {
+                mergedStyles.push(...this.props.style);
+            } else {
+                mergedStyles.push(this.props.style);
+            }
+        }
 
         return (
             <View
-                style={[
-                    {
-                        flex: this.props.weighting || 1,
-                        justifyContent: "stretch",
-                        textAlign: this.props.textAlign || "left",
-                        fontSize: this.props.fontSize || (this.props.isHeader === true ? 14 : 12),
-                        borderRight: includeRightBorder && "1pt solid black",
-                        wordWrap: "break-word",
-                        whiteSpace: "pre-wrap"
-                    },
-                    ...this.props.styles
-                ]}
+                style={mergedStyles}
                 wrap={true}
             >
                 {content}

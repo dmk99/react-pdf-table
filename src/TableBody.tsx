@@ -16,7 +16,7 @@ export class TableBody extends React.PureComponent<TableBodyProps> {
     render() {
         const rowCells: any[] = React.Children.toArray(this.props.children);
         const {includeLeftBorder, includeBottomBorder, includeRightBorder} = getDefaultBorderIncludes(this.props);
-        const dataRows = this.props.data || [];
+        const dataRows = this.props.data ?? [];
 
         return (
             (dataRows).map((data, rowIndex) => (

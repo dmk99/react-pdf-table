@@ -1,11 +1,7 @@
 import * as React from "react";
-import {Table} from "../../../src";
+import {DataTableCell, Table, TableBody, TableCell, TableHeader} from "../../../src";
 import {PdfContainer} from "../PdfContainer";
 import {generateRandomData, HumanRow} from "../../data/Humans";
-import {TableCell} from "../../../src/TableCell";
-import {DataTableCell} from "../../../src/DataTableCell";
-import {TableBody} from "../../../src/TableBody";
-import {TableHeader} from "../../../src/TableHeader";
 import {optionsKnob as options, text} from "@storybook/addon-knobs";
 
 interface SimpleTableWithWeightingState {

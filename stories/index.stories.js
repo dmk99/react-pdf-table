@@ -1,11 +1,11 @@
 import React from 'react';
 
-import { storiesOf } from "@storybook/react";
+import {storiesOf} from "@storybook/react";
 
-import { Welcome } from "@storybook/react/demo";
-import {SimpleTable} from "./components/story/SimpleTable";
+import {Welcome} from "@storybook/react/demo";
 import {withKnobs} from "@storybook/addon-knobs";
 import Introduction from "./components/Introduction";
+import {SimpleTable} from "./components/story/SimpleTable";
 import {SimpleTableWithWeighting} from "./components/story/SimpleTableWithWeighting";
 import {NestedTables} from "./components/story/NestedTables";
 

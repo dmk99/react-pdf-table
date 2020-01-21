@@ -33,7 +33,7 @@ export class TableRow extends React.PureComponent<Partial<TableBodyProps>> {
         let remainingWeighting = 1;
         let numberOfWeightingsDefined = 0;
         rowCells.forEach((i: TableCell | DataTableCell) => {
-            if (i.props.weighting != null) {
+            if (i.props.weighting !== undefined) {
                 remainingWeighting -= i.props.weighting;
                 numberOfWeightingsDefined++;
             }
@@ -43,6 +43,7 @@ export class TableRow extends React.PureComponent<Partial<TableBodyProps>> {
 
         return (
             <View
+                // @ts-ignore
                 style={{
                     borderBottom: includeBottomBorder && "1pt solid black",
                     borderRight: includeRightBorder && "1pt solid black",
@@ -56,7 +57,7 @@ export class TableRow extends React.PureComponent<Partial<TableBodyProps>> {
             >
                 {
                     rowCells.map((rc, columnIndex) => React.cloneElement(rc, {
-                        weighting: rc.props.weighting || weightingsPerNotSpecified,
+                        weighting: rc.props.weighting ?? weightingsPerNotSpecified,
                         data: this.props.data,
                         key: columnIndex,
                         fontSize: this.props.fontSize,

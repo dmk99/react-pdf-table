@@ -117,7 +117,7 @@ This example will render a header and one row using the default styling.
 
 To run the storybook:
 ```
-yarn start
+yarn storybook
 ```
 
 Compile to typescript: 
