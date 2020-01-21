@@ -65,10 +65,10 @@ export class NestedTables extends React.Component<void, NestedTablesState> {
                                     includeLeftBorder={false}
                                     includeRightBorder={false}
                                 >
-                                    <DataTableCell getContent={(r: HumanRow) => r.randomValues.one.toString()}/>
-                                    <DataTableCell getContent={(r: HumanRow) => r.randomValues.two.toString()}/>
-                                    <DataTableCell getContent={(r: HumanRow) => r.randomValues.three.toString()}/>
-                                    <DataTableCell getContent={(r: HumanRow) => r.randomValues.four.toString()}/>
+                                    <DataTableCell getContent={(r: HumanRow) => r.randomValues.one}/>
+                                    <DataTableCell getContent={(r: HumanRow) => r.randomValues.two}/>
+                                    <DataTableCell getContent={(r: HumanRow) => r.randomValues.three}/>
+                                    <DataTableCell getContent={(r: HumanRow) => r.randomValues.four}/>
                                 </TableBody>
                             </Table>
                         )}/>

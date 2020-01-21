@@ -1,6 +1,6 @@
 import * as React from "react";
 import ReactPDF, {Text, View} from "@react-pdf/renderer";
-import {getDefaultBorderIncludes} from "./Utils";
+import {getDefaultBorderIncludes, transformToArray} from "./Utils";
 
 /**
  * Whether to include borders or not.
@@ -66,7 +66,11 @@ export class TableCell extends React.PureComponent<TableCellProps> {
         if (typeof this.props.children === "string") {
             content = (
                 <Text>{this.props.children}</Text>
-            )
+            );
+        } else if(typeof this.props.children === "number") {
+            content = (
+                <Text>{this.props.children.toString()}</Text>
+            );
         } else {
             content = this.props.children;
         }
@@ -84,16 +88,9 @@ export class TableCell extends React.PureComponent<TableCellProps> {
         };
 
         const mergedStyles: ReactPDF.Style[] = [
-            defaultStyle
+            defaultStyle,
+            ...transformToArray(this.props.style)
         ];
-
-        if (this.props.style !== undefined) {
-            if (Array.isArray(this.props.style)) {
-                mergedStyles.push(...this.props.style);
-            } else {
-                mergedStyles.push(this.props.style);
-            }
-        }
 
         return (
             <View

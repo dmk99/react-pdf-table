@@ -11,7 +11,7 @@ interface DataTableCellProps extends TableCellProps {
      * The content to display for this cell.
      * @param data the data passed in.
      */
-    getContent: (data: any) => JSX.Element | string;
+    getContent: (data: any) => React.ReactNode | JSX.Element | string | number;
 }
 
 /**

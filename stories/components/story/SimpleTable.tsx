@@ -36,11 +36,11 @@ export class SimpleTable extends React.Component<{}, SimpleTableHeaderState> {
                         </TableCell>
                     </TableHeader>
                     <TableBody>
-                        <DataTableCell getContent={(r: HumanRow) => r.firstName}/>
-                        <DataTableCell getContent={(r: HumanRow) => r.lastName}/>
-                        <DataTableCell getContent={(r: HumanRow) => r.dob.toLocaleString()}/>
-                        <DataTableCell getContent={(r: HumanRow) => r.country}/>
-                        <DataTableCell getContent={(r: HumanRow) => r.phoneNumber}/>
+                        <DataTableCell getContent={(r) => r.firstName}/>
+                        <DataTableCell getContent={(r) => r.lastName}/>
+                        <DataTableCell getContent={(r) => r.dob.toLocaleString()}/>
+                        <DataTableCell getContent={(r) => r.country}/>
+                        <DataTableCell getContent={(r) => r.phoneNumber}/>
                     </TableBody>
                 </Table>
             </PdfContainer>

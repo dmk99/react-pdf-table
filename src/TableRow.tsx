@@ -39,7 +39,7 @@ export class TableRow extends React.PureComponent<Partial<TableBodyProps>> {
             }
         });
 
-        const weightingsPerNotSpecified = remainingWeighting / (rowCells.length - numberOfWeightingsDefined);
+        const weightingsPerNotSpecified = Math.ceil(remainingWeighting / (rowCells.length - numberOfWeightingsDefined));
 
         return (
             <View
