@@ -329,7 +329,7 @@ ___
 
 ▸ **render**(): *Element‹›[]*
 
-*Defined in [src/TableBody.tsx:16](https://github.com/dmk99/react-pdf-table/blob/a0dbc7d/src/TableBody.tsx#L16)*
+*Defined in [src/TableBody.tsx:16](https://github.com/dmk99/react-pdf-table/blob/875b9cf/src/TableBody.tsx#L16)*
 
 **Returns:** *Element‹›[]*
 

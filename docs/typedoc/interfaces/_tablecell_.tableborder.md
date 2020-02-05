@@ -28,7 +28,7 @@ Depending on the context some toggles will not have any effect.
 
 • **includeBottomBorder**? : *boolean*
 
-*Defined in [src/TableCell.tsx:23](https://github.com/dmk99/react-pdf-table/blob/a0dbc7d/src/TableCell.tsx#L23)*
+*Defined in [src/TableCell.tsx:23](https://github.com/dmk99/react-pdf-table/blob/875b9cf/src/TableCell.tsx#L23)*
 
 Include the bottom border. Default true.
 
@@ -38,7 +38,7 @@ ___
 
 • **includeLeftBorder**? : *boolean*
 
-*Defined in [src/TableCell.tsx:28](https://github.com/dmk99/react-pdf-table/blob/a0dbc7d/src/TableCell.tsx#L28)*
+*Defined in [src/TableCell.tsx:28](https://github.com/dmk99/react-pdf-table/blob/875b9cf/src/TableCell.tsx#L28)*
 
 Include the left border. Default true.
 
@@ -48,7 +48,7 @@ ___
 
 • **includeRightBorder**? : *boolean*
 
-*Defined in [src/TableCell.tsx:18](https://github.com/dmk99/react-pdf-table/blob/a0dbc7d/src/TableCell.tsx#L18)*
+*Defined in [src/TableCell.tsx:18](https://github.com/dmk99/react-pdf-table/blob/875b9cf/src/TableCell.tsx#L18)*
 
 Include the right border. Default true.
 
@@ -58,6 +58,6 @@ ___
 
 • **includeTopBorder**? : *boolean*
 
-*Defined in [src/TableCell.tsx:13](https://github.com/dmk99/react-pdf-table/blob/a0dbc7d/src/TableCell.tsx#L13)*
+*Defined in [src/TableCell.tsx:13](https://github.com/dmk99/react-pdf-table/blob/875b9cf/src/TableCell.tsx#L13)*
 
 Include the top border. Default true.

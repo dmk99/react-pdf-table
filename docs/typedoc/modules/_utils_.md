@@ -15,7 +15,7 @@
 
 ▸ **getDefaultBorderIncludes**(`border`: [TableBorder](../interfaces/_tablecell_.tableborder.md)): *[TableBorder](../interfaces/_tablecell_.tableborder.md)*
 
-*Defined in [src/Utils.ts:9](https://github.com/dmk99/react-pdf-table/blob/a0dbc7d/src/Utils.ts#L9)*
+*Defined in [src/Utils.ts:9](https://github.com/dmk99/react-pdf-table/blob/875b9cf/src/Utils.ts#L9)*
 
 Return whether particular borders need to be included.
 If the value is undefined then return true for that border.
@@ -34,7 +34,7 @@ ___
 
 ▸ **transformToArray**<**T**>(`items?`: T | T[]): *T[]*
 
-*Defined in [src/Utils.ts:25](https://github.com/dmk99/react-pdf-table/blob/a0dbc7d/src/Utils.ts#L25)*
+*Defined in [src/Utils.ts:25](https://github.com/dmk99/react-pdf-table/blob/875b9cf/src/Utils.ts#L25)*
 
 Transform a single item to an array (with one element).
 Or return the array.

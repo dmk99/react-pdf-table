@@ -327,7 +327,7 @@ ___
 
 ▸ **render**(): *Element‹›*
 
-*Defined in [src/Table.tsx:11](https://github.com/dmk99/react-pdf-table/blob/a0dbc7d/src/Table.tsx#L11)*
+*Defined in [src/Table.tsx:11](https://github.com/dmk99/react-pdf-table/blob/875b9cf/src/Table.tsx#L11)*
 
 **Returns:** *Element‹›*
 

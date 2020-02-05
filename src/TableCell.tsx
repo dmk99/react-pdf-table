@@ -30,15 +30,15 @@ export interface TableBorder {
 
 export interface TableCellProps extends TableBorder {
     /**
-     * The weighting of a cell based on the flex layout styles.
+     * The weighting of a cell based on the flex layout style.
      * This value is between 0..1, if not specified 1 is assumed, this will take up the remaining available space.
      */
     weighting?: number;
 
     /**
-     * Extra styling to apply. These will override existing styles with the same key.
+     * Extra styling to apply. These will override existing style with the same key.
      */
-    styles?: ReactPDF.Style | ReactPDF.Style[];
+    style?: ReactPDF.Style | ReactPDF.Style[];
 
     /**
      * How to align the text
@@ -89,7 +89,7 @@ export class TableCell extends React.PureComponent<TableCellProps> {
 
         const mergedStyles: ReactPDF.Style[] = [
             defaultStyle,
-            ...transformToArray(this.props.styles)
+            ...transformToArray(this.props.style)
         ];
 
         return (

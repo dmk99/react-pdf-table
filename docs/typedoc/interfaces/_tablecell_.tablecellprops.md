@@ -20,7 +20,7 @@
 * [includeRightBorder](_tablecell_.tablecellprops.md#optional-includerightborder)
 * [includeTopBorder](_tablecell_.tablecellprops.md#optional-includetopborder)
 * [isHeader](_tablecell_.tablecellprops.md#optional-isheader)
-* [styles](_tablecell_.tablecellprops.md#optional-styles)
+* [style](_tablecell_.tablecellprops.md#optional-style)
 * [textAlign](_tablecell_.tablecellprops.md#optional-textalign)
 * [weighting](_tablecell_.tablecellprops.md#optional-weighting)
 
@@ -30,7 +30,7 @@
 
 • **fontSize**? : *number | string*
 
-*Defined in [src/TableCell.tsx:56](https://github.com/dmk99/react-pdf-table/blob/a0dbc7d/src/TableCell.tsx#L56)*
+*Defined in [src/TableCell.tsx:56](https://github.com/dmk99/react-pdf-table/blob/875b9cf/src/TableCell.tsx#L56)*
 
 The font-size to apply to the cell.
 
@@ -42,7 +42,7 @@ ___
 
 *Inherited from [TableBorder](_tablecell_.tableborder.md).[includeBottomBorder](_tablecell_.tableborder.md#optional-includebottomborder)*
 
-*Defined in [src/TableCell.tsx:23](https://github.com/dmk99/react-pdf-table/blob/a0dbc7d/src/TableCell.tsx#L23)*
+*Defined in [src/TableCell.tsx:23](https://github.com/dmk99/react-pdf-table/blob/875b9cf/src/TableCell.tsx#L23)*
 
 Include the bottom border. Default true.
 
@@ -54,7 +54,7 @@ ___
 
 *Inherited from [TableBorder](_tablecell_.tableborder.md).[includeLeftBorder](_tablecell_.tableborder.md#optional-includeleftborder)*
 
-*Defined in [src/TableCell.tsx:28](https://github.com/dmk99/react-pdf-table/blob/a0dbc7d/src/TableCell.tsx#L28)*
+*Defined in [src/TableCell.tsx:28](https://github.com/dmk99/react-pdf-table/blob/875b9cf/src/TableCell.tsx#L28)*
 
 Include the left border. Default true.
 
@@ -66,7 +66,7 @@ ___
 
 *Inherited from [TableBorder](_tablecell_.tableborder.md).[includeRightBorder](_tablecell_.tableborder.md#optional-includerightborder)*
 
-*Defined in [src/TableCell.tsx:18](https://github.com/dmk99/react-pdf-table/blob/a0dbc7d/src/TableCell.tsx#L18)*
+*Defined in [src/TableCell.tsx:18](https://github.com/dmk99/react-pdf-table/blob/875b9cf/src/TableCell.tsx#L18)*
 
 Include the right border. Default true.
 
@@ -78,7 +78,7 @@ ___
 
 *Inherited from [TableBorder](_tablecell_.tableborder.md).[includeTopBorder](_tablecell_.tableborder.md#optional-includetopborder)*
 
-*Defined in [src/TableCell.tsx:13](https://github.com/dmk99/react-pdf-table/blob/a0dbc7d/src/TableCell.tsx#L13)*
+*Defined in [src/TableCell.tsx:13](https://github.com/dmk99/react-pdf-table/blob/875b9cf/src/TableCell.tsx#L13)*
 
 Include the top border. Default true.
 
@@ -88,19 +88,19 @@ ___
 
 • **isHeader**? : *boolean*
 
-*Defined in [src/TableCell.tsx:51](https://github.com/dmk99/react-pdf-table/blob/a0dbc7d/src/TableCell.tsx#L51)*
+*Defined in [src/TableCell.tsx:51](https://github.com/dmk99/react-pdf-table/blob/875b9cf/src/TableCell.tsx#L51)*
 
 Whether this is a header cell or not. If not defined it will be false.
 
 ___
 
-### `Optional` styles
+### `Optional` style
 
-• **styles**? : *Style | Style[]*
+• **style**? : *Style | Style[]*
 
-*Defined in [src/TableCell.tsx:41](https://github.com/dmk99/react-pdf-table/blob/a0dbc7d/src/TableCell.tsx#L41)*
+*Defined in [src/TableCell.tsx:41](https://github.com/dmk99/react-pdf-table/blob/875b9cf/src/TableCell.tsx#L41)*
 
-Extra styling to apply. These will override existing styles with the same key.
+Extra styling to apply. These will override existing style with the same key.
 
 ___
 
@@ -108,7 +108,7 @@ ___
 
 • **textAlign**? : *"left" | "center" | "right"*
 
-*Defined in [src/TableCell.tsx:46](https://github.com/dmk99/react-pdf-table/blob/a0dbc7d/src/TableCell.tsx#L46)*
+*Defined in [src/TableCell.tsx:46](https://github.com/dmk99/react-pdf-table/blob/875b9cf/src/TableCell.tsx#L46)*
 
 How to align the text
 
@@ -118,7 +118,7 @@ ___
 
 • **weighting**? : *number*
 
-*Defined in [src/TableCell.tsx:36](https://github.com/dmk99/react-pdf-table/blob/a0dbc7d/src/TableCell.tsx#L36)*
+*Defined in [src/TableCell.tsx:36](https://github.com/dmk99/react-pdf-table/blob/875b9cf/src/TableCell.tsx#L36)*
 
-The weighting of a cell based on the flex layout styles.
+The weighting of a cell based on the flex layout style.
 This value is between 0..1, if not specified 1 is assumed, this will take up the remaining available space.
