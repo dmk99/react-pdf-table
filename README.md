@@ -14,6 +14,8 @@ npm install @david.kucsai/react-pdf-table
 
 ## Documentation
 
+Refer to [https://dmk99.github.io/react-pdf-table/typedoc](https://dmk99.github.io/react-pdf-table/typedoc) for the type definitions.
+
 ### Notes
 
 - Layout uses `flex` behind the scenes. 
