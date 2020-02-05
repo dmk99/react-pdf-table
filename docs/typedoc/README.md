@@ -1,3 +1,7 @@
+[@david.kucsai/react-pdf-table](README.md) › [Globals](globals.md)
+
+# @david.kucsai/react-pdf-table
+
 # @david.kucsai/react-pdf-table
 
 This library is designed to be used with [@react-pdf/renderer](https://www.npmjs.com/package/@react-pdf/renderer).

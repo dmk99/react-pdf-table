@@ -10,7 +10,7 @@
     "prepublish": "npm run build",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook -o docs",
-    "build-doco": "typedoc --out docs/typedoc --mode modules src"
+    "build-doco": "typedoc --plugin typedoc-plugin-markdown --out docs/typedoc --mode modules src"
   },
   "author": "David Kucsai",
   "license": "MIT",
@@ -57,6 +57,7 @@
     "ts-jest": "^24.0.2",
     "ts-loader": "^6.0.3",
     "typedoc": "^0.16.9",
+    "typedoc-plugin-markdown": "^2.2.16",
     "typescript": "^3.7.5",
     "webpack": "^4.35.0",
     "webpack-cli": "^3.3.4",
