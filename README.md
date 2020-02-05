@@ -14,7 +14,7 @@ npm install @david.kucsai/react-pdf-table
 
 ## Documentation
 
-Refer to [https://dmk99.github.io/react-pdf-table/typedoc](https://dmk99.github.io/react-pdf-table/typedoc) for the type definitions.
+Refer to [API Documentation](https://dmk99.github.io/react-pdf-table/typedoc/index.html) for the type definitions.
 
 ### Notes
 
