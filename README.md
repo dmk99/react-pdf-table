@@ -9,8 +9,8 @@ The goal behind this library is to provide a declarative way of defining tables 
 To get started run:
 
 ```
-npm install @david.kucsai/react-pdf-table
-```
+ npm install "@david.kucsai/react-pdf-table"
+ ```
 
 ## Documentation
 
