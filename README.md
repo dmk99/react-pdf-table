@@ -11,6 +11,12 @@ To get started run:
 ```
  npm install "@david.kucsai/react-pdf-table"
  ```
+ 
+ On Windows you must escape the '.':
+ ```
+ npm install "@david`.kucsai/react-pdf-table"
+ ```
+ 
 
 ## Documentation
 
