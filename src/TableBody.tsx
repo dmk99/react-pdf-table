@@ -9,10 +9,17 @@ export interface TableBodyProps extends TableRowProps {
     data?: any[];
 }
 
+// This interface adds a flag to indicate if we should render the top border,
+// thus allowing us to render it in the event that no
+// header rows were present in the table.
+interface InternalBodyProps extends TableBodyProps {
+    renderTopBorder?: boolean
+}
+
 /**
  * This component displays the data as {@see TableRow}s.
  */
-export class TableBody extends React.PureComponent<TableBodyProps> {
+export class TableBody extends React.PureComponent<InternalBodyProps> {
     render() {
         const rowCells: any[] = React.Children.toArray(this.props.children);
         const {includeLeftBorder, includeBottomBorder, includeRightBorder} = getDefaultBorderIncludes(this.props);
@@ -27,7 +34,7 @@ export class TableBody extends React.PureComponent<TableBodyProps> {
                     includeLeftBorder={includeLeftBorder}
                     includeBottomBorder={includeBottomBorder}
                     includeRightBorder={includeRightBorder}
-                    includeTopBorder={false}
+                    includeTopBorder={this.props.renderTopBorder ?? false}
                 >
                     {rowCells}
                 </TableRow>
