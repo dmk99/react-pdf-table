@@ -11,6 +11,7 @@
     ],
     "module": "commonjs",
     "sourceMap": true,
+    "inlineSources": true,
     "jsx": "react",
     "target": "es5",
     "outDir": "./lib",
