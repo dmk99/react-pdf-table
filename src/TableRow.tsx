@@ -20,6 +20,26 @@ export interface TableRowProps extends TableBorder {
      * Any data associated, relevant if the parent is a {@see DataTableCell}.
      */
     data?: any;
+
+    /**
+     * Whether rows have alternating styles
+     */
+    zebra?: boolean;
+
+    /**
+     * Whether this row is even (true) or odd (false)
+     */
+    even?: boolean;
+
+    /**
+     * Specify the color of even rows
+     */
+    evenRowColor?: string;
+
+    /**
+     * Specify the color of odd rows
+     */
+    oddRowColor?: string;
 }
 
 /**
@@ -41,6 +61,8 @@ export class TableRow extends React.PureComponent<Partial<TableBodyProps>> {
 
         const weightingsPerNotSpecified = Math.ceil(remainingWeighting / (rowCells.length - numberOfWeightingsDefined));
 
+        const rowColor = ((this.props.zebra || this.props.evenRowColor) && this.props.even) ? this.props.evenRowColor || 'lightgray' : this.props.oddRowColor || '';
+
         return (
             <View
                 // @ts-ignore
@@ -52,7 +74,8 @@ export class TableRow extends React.PureComponent<Partial<TableBodyProps>> {
                     width: "100%",
                     display: "flex",
                     flexDirection: "row",
-                    justifyContent: "stretch"
+                    justifyContent: "space-between",
+                    backgroundColor: rowColor,
                 }}
             >
                 {

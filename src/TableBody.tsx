@@ -7,6 +7,7 @@ export interface TableBodyProps extends TableRowProps {
      * The data associated with the table.
      */
     data?: any[];
+    zebra?: boolean;
 }
 
 // This interface adds a flag to indicate if we should render the top border,
@@ -30,6 +31,7 @@ export class TableBody extends React.PureComponent<InternalBodyProps> {
                 <TableRow
                     {...this.props}
                     key={rowIndex}
+                    even={rowIndex%2===0}
                     data={data}
                     includeLeftBorder={includeLeftBorder}
                     includeBottomBorder={includeBottomBorder}
