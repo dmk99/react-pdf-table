@@ -9,9 +9,10 @@ export interface TableBodyProps extends TableRowProps, Pick<ZebraProps, "zebra">
      */
     data?: any[];
 
-    // This interface adds a flag to indicate if we should render the top border,
-    // thus allowing us to render it in the event that no
-    // header rows were present in the table.
+    /**
+     * Allows control of the very top border of the TableBody to be toggled on and off
+     * if there is no header.
+     */
     renderTopBorder?: boolean
 }
 

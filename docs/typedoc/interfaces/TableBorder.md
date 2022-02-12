@@ -30,7 +30,7 @@ Include the bottom border. Default true.
 
 #### Defined in
 
-[src/TableCell.tsx:23](https://github.com/dmk99/react-pdf-table/blob/bebcafb/src/TableCell.tsx#L23)
+[src/TableCell.tsx:23](https://github.com/dmk99/react-pdf-table/blob/ddcba28/src/TableCell.tsx#L23)
 
 ___
 
@@ -42,7 +42,7 @@ Include the left border. Default true.
 
 #### Defined in
 
-[src/TableCell.tsx:28](https://github.com/dmk99/react-pdf-table/blob/bebcafb/src/TableCell.tsx#L28)
+[src/TableCell.tsx:28](https://github.com/dmk99/react-pdf-table/blob/ddcba28/src/TableCell.tsx#L28)
 
 ___
 
@@ -54,7 +54,7 @@ Include the right border. Default true.
 
 #### Defined in
 
-[src/TableCell.tsx:18](https://github.com/dmk99/react-pdf-table/blob/bebcafb/src/TableCell.tsx#L18)
+[src/TableCell.tsx:18](https://github.com/dmk99/react-pdf-table/blob/ddcba28/src/TableCell.tsx#L18)
 
 ___
 
@@ -66,4 +66,4 @@ Include the top border. Default true.
 
 #### Defined in
 
-[src/TableCell.tsx:13](https://github.com/dmk99/react-pdf-table/blob/bebcafb/src/TableCell.tsx#L13)
+[src/TableCell.tsx:13](https://github.com/dmk99/react-pdf-table/blob/ddcba28/src/TableCell.tsx#L13)

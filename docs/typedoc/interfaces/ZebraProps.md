@@ -27,7 +27,7 @@ Defaults to lightgray if not defined.
 
 #### Defined in
 
-[src/Table.tsx:17](https://github.com/dmk99/react-pdf-table/blob/bebcafb/src/Table.tsx#L17)
+[src/Table.tsx:17](https://github.com/dmk99/react-pdf-table/blob/ddcba28/src/Table.tsx#L17)
 
 ___
 
@@ -40,7 +40,7 @@ Defaults to transparent or '' if not defined.
 
 #### Defined in
 
-[src/Table.tsx:23](https://github.com/dmk99/react-pdf-table/blob/bebcafb/src/Table.tsx#L23)
+[src/Table.tsx:23](https://github.com/dmk99/react-pdf-table/blob/ddcba28/src/Table.tsx#L23)
 
 ___
 
@@ -53,4 +53,4 @@ Defaults to false.
 
 #### Defined in
 
-[src/Table.tsx:11](https://github.com/dmk99/react-pdf-table/blob/bebcafb/src/Table.tsx#L11)
+[src/Table.tsx:11](https://github.com/dmk99/react-pdf-table/blob/ddcba28/src/Table.tsx#L11)

@@ -38,7 +38,7 @@ TableRowProps.data
 
 #### Defined in
 
-[src/TableRow.tsx:22](https://github.com/dmk99/react-pdf-table/blob/bebcafb/src/TableRow.tsx#L22)
+[src/TableRow.tsx:22](https://github.com/dmk99/react-pdf-table/blob/ddcba28/src/TableRow.tsx#L22)
 
 ___
 
@@ -54,7 +54,7 @@ TableRowProps.even
 
 #### Defined in
 
-[src/TableRow.tsx:32](https://github.com/dmk99/react-pdf-table/blob/bebcafb/src/TableRow.tsx#L32)
+[src/TableRow.tsx:32](https://github.com/dmk99/react-pdf-table/blob/ddcba28/src/TableRow.tsx#L32)
 
 ___
 
@@ -70,7 +70,7 @@ TableRowProps.evenRowColor
 
 #### Defined in
 
-[src/TableRow.tsx:37](https://github.com/dmk99/react-pdf-table/blob/bebcafb/src/TableRow.tsx#L37)
+[src/TableRow.tsx:37](https://github.com/dmk99/react-pdf-table/blob/ddcba28/src/TableRow.tsx#L37)
 
 ___
 
@@ -86,7 +86,7 @@ TableRowProps.fontSize
 
 #### Defined in
 
-[src/TableRow.tsx:12](https://github.com/dmk99/react-pdf-table/blob/bebcafb/src/TableRow.tsx#L12)
+[src/TableRow.tsx:12](https://github.com/dmk99/react-pdf-table/blob/ddcba28/src/TableRow.tsx#L12)
 
 ___
 
@@ -102,7 +102,7 @@ TableRowProps.includeBottomBorder
 
 #### Defined in
 
-[src/TableCell.tsx:23](https://github.com/dmk99/react-pdf-table/blob/bebcafb/src/TableCell.tsx#L23)
+[src/TableCell.tsx:23](https://github.com/dmk99/react-pdf-table/blob/ddcba28/src/TableCell.tsx#L23)
 
 ___
 
@@ -118,7 +118,7 @@ TableRowProps.includeLeftBorder
 
 #### Defined in
 
-[src/TableCell.tsx:28](https://github.com/dmk99/react-pdf-table/blob/bebcafb/src/TableCell.tsx#L28)
+[src/TableCell.tsx:28](https://github.com/dmk99/react-pdf-table/blob/ddcba28/src/TableCell.tsx#L28)
 
 ___
 
@@ -134,7 +134,7 @@ TableRowProps.includeRightBorder
 
 #### Defined in
 
-[src/TableCell.tsx:18](https://github.com/dmk99/react-pdf-table/blob/bebcafb/src/TableCell.tsx#L18)
+[src/TableCell.tsx:18](https://github.com/dmk99/react-pdf-table/blob/ddcba28/src/TableCell.tsx#L18)
 
 ___
 
@@ -150,7 +150,7 @@ TableRowProps.includeTopBorder
 
 #### Defined in
 
-[src/TableCell.tsx:13](https://github.com/dmk99/react-pdf-table/blob/bebcafb/src/TableCell.tsx#L13)
+[src/TableCell.tsx:13](https://github.com/dmk99/react-pdf-table/blob/ddcba28/src/TableCell.tsx#L13)
 
 ___
 
@@ -166,7 +166,7 @@ TableRowProps.oddRowColor
 
 #### Defined in
 
-[src/TableRow.tsx:42](https://github.com/dmk99/react-pdf-table/blob/bebcafb/src/TableRow.tsx#L42)
+[src/TableRow.tsx:42](https://github.com/dmk99/react-pdf-table/blob/ddcba28/src/TableRow.tsx#L42)
 
 ___
 
@@ -182,7 +182,7 @@ TableRowProps.textAlign
 
 #### Defined in
 
-[src/TableRow.tsx:17](https://github.com/dmk99/react-pdf-table/blob/bebcafb/src/TableRow.tsx#L17)
+[src/TableRow.tsx:17](https://github.com/dmk99/react-pdf-table/blob/ddcba28/src/TableRow.tsx#L17)
 
 ___
 
@@ -198,4 +198,4 @@ TableRowProps.zebra
 
 #### Defined in
 
-[src/TableRow.tsx:27](https://github.com/dmk99/react-pdf-table/blob/bebcafb/src/TableRow.tsx#L27)
+[src/TableRow.tsx:27](https://github.com/dmk99/react-pdf-table/blob/ddcba28/src/TableRow.tsx#L27)

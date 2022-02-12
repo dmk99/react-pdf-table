@@ -57,6 +57,7 @@ export class NestedTables extends React.Component<void, NestedTablesState> {
                         <DataTableCell getContent={(r: HumanRow) => (
                             <Table
                                 data={[r]}
+                                isNested={true}
                             >
                                 <TableBody
                                     textAlign={"center"}

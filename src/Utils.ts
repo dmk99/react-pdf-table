@@ -8,10 +8,10 @@ import {TableBorder} from "./TableCell";
  */
 export function getDefaultBorderIncludes(border: TableBorder): TableBorder {
     return {
-        includeBottomBorder: border.includeBottomBorder === undefined ? true : border.includeBottomBorder,
-        includeTopBorder: border.includeTopBorder === undefined ? true : border.includeTopBorder,
-        includeLeftBorder: border.includeLeftBorder === undefined ? true : border.includeLeftBorder,
-        includeRightBorder: border.includeRightBorder === undefined ? true : border.includeRightBorder,
+        includeBottomBorder: border.includeBottomBorder ?? true,
+        includeTopBorder: border.includeTopBorder ?? true,
+        includeLeftBorder: border.includeLeftBorder ?? true,
+        includeRightBorder: border.includeRightBorder ?? true,
     }
 }
 

@@ -28,6 +28,12 @@ export interface TableProps extends ZebraProps {
      * The table data to display.
      */
     data?: any[];
+
+    /**
+     * Indicates that this is a nested table.
+     * Otherwise assumed to be false.
+     */
+    isNested?: boolean;
 }
 
 export class Table extends React.PureComponent<TableProps> {
@@ -49,7 +55,7 @@ export class Table extends React.PureComponent<TableProps> {
 
         tableBody = React.cloneElement(tableBody, {
             data: tableBody?.props?.data ?? this.props.data ?? [],
-            renderTopBorder: !tableHeader,
+            renderTopBorder: this.props.isNested ? false : !tableHeader,
             zebra: tableBody?.props?.zebra ?? this.props.zebra ?? false,
             evenRowColor: tableBody?.props?.evenRowColor ?? this.props.evenRowColor ?? '',
             oddRowColor: tableBody?.props?.oddRowColor ?? this.props.oddRowColor ?? '',

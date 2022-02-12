@@ -65,12 +65,11 @@ export class TableRow extends React.PureComponent<Partial<TableBodyProps>> {
 
         return (
             <View
-                // @ts-ignore
                 style={{
-                    borderBottom: includeBottomBorder && "1pt solid black",
-                    borderRight: includeRightBorder && "1pt solid black",
-                    borderLeft: includeLeftBorder && "1pt solid black",
-                    borderTop: includeTopBorder && "1pt solid black",
+                    borderBottom: includeBottomBorder === true ? "1pt solid black" : 0,
+                    borderRight: includeRightBorder === true ? "1pt solid black" : 0,
+                    borderLeft: includeLeftBorder === true ? "1pt solid black" : 0,
+                    borderTop: includeTopBorder === true ? "1pt solid black" : 0,
                     width: "100%",
                     display: "flex",
                     flexDirection: "row",
@@ -86,7 +85,7 @@ export class TableRow extends React.PureComponent<Partial<TableBodyProps>> {
                         fontSize: this.props.fontSize,
                         textAlign: this.props.textAlign,
                         includeLeftBorder: columnIndex === 0,
-                        includeRightBorder: columnIndex !== (rowCells.length - 1),
+                        includeRightBorder: columnIndex !== (rowCells.length - 1)
                     }))
                 }
             </View>

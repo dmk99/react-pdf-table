@@ -82,7 +82,7 @@ export class TableCell extends React.PureComponent<TableCellProps> {
             justifyContent: "stretch",
             textAlign: this.props.textAlign ?? "left",
             fontSize: this.props.fontSize ?? (this.props.isHeader === true ? 14 : 12),
-            borderRight: includeRightBorder && "1pt solid black",
+            borderRight: includeRightBorder === true ? "1pt solid black" : 0,
             wordWrap: "break-word",
             whiteSpace: "pre-wrap"
         };

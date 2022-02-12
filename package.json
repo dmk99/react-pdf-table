@@ -1,6 +1,6 @@
 {
   "name": "@david.kucsai/react-pdf-table",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "description": "Provides tables for the @react-pdf/renderer.",
   "main": "./lib/index.js",
   "scripts": {

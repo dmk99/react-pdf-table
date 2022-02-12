@@ -14,6 +14,7 @@
 
 - [data](TableProps.md#data)
 - [evenRowColor](TableProps.md#evenrowcolor)
+- [isNested](TableProps.md#isnested)
 - [oddRowColor](TableProps.md#oddrowcolor)
 - [zebra](TableProps.md#zebra)
 
@@ -27,7 +28,7 @@ The table data to display.
 
 #### Defined in
 
-[src/Table.tsx:30](https://github.com/dmk99/react-pdf-table/blob/bebcafb/src/Table.tsx#L30)
+[src/Table.tsx:30](https://github.com/dmk99/react-pdf-table/blob/ddcba28/src/Table.tsx#L30)
 
 ___
 
@@ -44,7 +45,20 @@ Defaults to lightgray if not defined.
 
 #### Defined in
 
-[src/Table.tsx:17](https://github.com/dmk99/react-pdf-table/blob/bebcafb/src/Table.tsx#L17)
+[src/Table.tsx:17](https://github.com/dmk99/react-pdf-table/blob/ddcba28/src/Table.tsx#L17)
+
+___
+
+### isNested
+
+• `Optional` **isNested**: `boolean`
+
+Indicates that this is a nested table.
+Otherwise assumed to be false.
+
+#### Defined in
+
+[src/Table.tsx:36](https://github.com/dmk99/react-pdf-table/blob/ddcba28/src/Table.tsx#L36)
 
 ___
 
@@ -61,7 +75,7 @@ Defaults to transparent or '' if not defined.
 
 #### Defined in
 
-[src/Table.tsx:23](https://github.com/dmk99/react-pdf-table/blob/bebcafb/src/Table.tsx#L23)
+[src/Table.tsx:23](https://github.com/dmk99/react-pdf-table/blob/ddcba28/src/Table.tsx#L23)
 
 ___
 
@@ -78,4 +92,4 @@ Defaults to false.
 
 #### Defined in
 
-[src/Table.tsx:11](https://github.com/dmk99/react-pdf-table/blob/bebcafb/src/Table.tsx#L11)
+[src/Table.tsx:11](https://github.com/dmk99/react-pdf-table/blob/ddcba28/src/Table.tsx#L11)

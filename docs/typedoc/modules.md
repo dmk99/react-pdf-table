@@ -48,7 +48,7 @@ If the value is undefined then return true for that border.
 
 #### Defined in
 
-[src/Utils.ts:9](https://github.com/dmk99/react-pdf-table/blob/bebcafb/src/Utils.ts#L9)
+[src/Utils.ts:9](https://github.com/dmk99/react-pdf-table/blob/ddcba28/src/Utils.ts#L9)
 
 ___
 
@@ -79,4 +79,4 @@ an array of items or an empty array.
 
 #### Defined in
 
-[src/Utils.ts:25](https://github.com/dmk99/react-pdf-table/blob/bebcafb/src/Utils.ts#L25)
+[src/Utils.ts:25](https://github.com/dmk99/react-pdf-table/blob/ddcba28/src/Utils.ts#L25)
