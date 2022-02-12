@@ -5,6 +5,9 @@ import {View} from "@react-pdf/renderer";
 
 interface TableProps {
     data?: any[];
+    zebra?: boolean;
+    evenRowColor?: string;
+    oddRowColor?: string;
 }
 
 export class Table extends React.PureComponent<TableProps> {
@@ -22,7 +25,10 @@ export class Table extends React.PureComponent<TableProps> {
 
         tableBody = React.cloneElement(tableBody, {
             data: tableBody.props.data ?? this.props.data ?? [],
-            renderTopBorder: !tableHeader
+            renderTopBorder: !tableHeader,
+            zebra: tableBody.props.zebra ?? this.props.zebra ?? false,
+            evenRowColor: tableBody.props.evenRowColor ?? this.props.evenRowColor ?? '',
+            oddRowColor: tableBody.props.oddRowColor ?? this.props.oddRowColor ?? '',
         });
 
         return (
