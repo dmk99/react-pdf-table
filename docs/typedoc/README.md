@@ -1,6 +1,4 @@
-[@david.kucsai/react-pdf-table](README.md) › [Globals](globals.md)
-
-# @david.kucsai/react-pdf-table
+@david.kucsai/react-pdf-table / [Exports](modules.md)
 
 # @david.kucsai/react-pdf-table
 
@@ -13,8 +11,14 @@ The goal behind this library is to provide a declarative way of defining tables 
 To get started run:
 
 ```
-npm install @david.kucsai/react-pdf-table
-```
+ npm install "@david.kucsai/react-pdf-table"
+ ```
+ 
+ On Windows you must escape the '.':
+ ```
+ npm install "@david`.kucsai/react-pdf-table"
+ ```
+ 
 
 ## Documentation
 
@@ -37,86 +41,86 @@ e.g. `View`, `Text` etc. If the content is a `string` it will be wrapped with a 
 
 This example will render a header and one row using the default styling.
 
-```typescript jsx
-    <PDFViewer>
-        <Document>
-            <Page>
-                <Table
-                    data={[
-                        {firstName: "John", lastName: "Smith", dob: new Date(2000, 1, 1), country: "Australia", phoneNumber: "xxx-0000-0000"}
-                    ]}
-                >
-                    <TableHeader>
-                        <TableCell>
-                            First Name
-                        </TableCell>
-                        <TableCell>
-                            Last Name
-                        </TableCell>
-                        <TableCell>
-                            DOB
-                        </TableCell>
-                        <TableCell>
-                            Country
-                        </TableCell>
-                        <TableCell>
-                            Phone Number
-                        </TableCell>
-                    </TableHeader>
-                    <TableBody>
-                        <DataTableCell getContent={(r) => r.firstName}/>
-                        <DataTableCell getContent={(r) => r.lastName}/>
-                        <DataTableCell getContent={(r) => r.dob.toLocaleString()}/>
-                        <DataTableCell getContent={(r) => r.country}/>
-                        <DataTableCell getContent={(r) => r.phoneNumber}/>
-                    </TableBody>
-                </Table>
-            </Page>
-        </Document>
-    </PDFViewer>
+```jsx
+<PDFViewer>
+    <Document>
+        <Page>
+            <Table
+                data={[
+                    {firstName: "John", lastName: "Smith", dob: new Date(2000, 1, 1), country: "Australia", phoneNumber: "xxx-0000-0000"}
+                ]}
+            >
+                <TableHeader>
+                    <TableCell>
+                        First Name
+                    </TableCell>
+                    <TableCell>
+                        Last Name
+                    </TableCell>
+                    <TableCell>
+                        DOB
+                    </TableCell>
+                    <TableCell>
+                        Country
+                    </TableCell>
+                    <TableCell>
+                        Phone Number
+                    </TableCell>
+                </TableHeader>
+                <TableBody>
+                    <DataTableCell getContent={(r) => r.firstName}/>
+                    <DataTableCell getContent={(r) => r.lastName}/>
+                    <DataTableCell getContent={(r) => r.dob.toLocaleString()}/>
+                    <DataTableCell getContent={(r) => r.country}/>
+                    <DataTableCell getContent={(r) => r.phoneNumber}/>
+                </TableBody>
+            </Table>
+        </Page>
+    </Document>
+</PDFViewer>
 ```
 
 #### Formatting Example - Aligning Text and Weightings for columns
 
 This example will render a header and one row using the default styling.
 
-```typescript jsx
-    <PDFViewer>
-        <Document>
-            <Page>
-                <Table
-                    data={[
-                        {firstName: "John", lastName: "Smith", dob: new Date(2000, 1, 1), country: "Australia", phoneNumber: "xxx-0000-0000"}
-                    ]}
-                >
-                    <TableHeader textAlign={"center"}>
-                        <TableCell weighting={0.3}>
-                            First Name
-                        </TableCell>
-                        <TableCell weighting={0.3}>
-                            Last Name
-                        </TableCell>
-                        <TableCell>
-                            DOB
-                        </TableCell>
-                        <TableCell>
-                            Country
-                        </TableCell>
-                        <TableCell>
-                            Phone Number
-                        </TableCell>
-                    </TableHeader>
-                    <TableBody>
-                        <DataTableCell weighting={0.3} getContent={(r) => r.firstName}/>
-                        <DataTableCell weighting={0.3} getContent={(r) => r.lastName}/>
-                        <DataTableCell getContent={(r) => r.dob.toLocaleString()}/>
-                        <DataTableCell getContent={(r) => r.country}/>
-                        <DataTableCell getContent={(r) => r.phoneNumber}/>
-                    </TableBody>
-                </Table>
-            </Page>
-        </Document>
-    </PDFViewer>
+```jsx
+<PDFViewer>
+    <Document>
+        <Page>
+            <Table
+                data={[
+                    {firstName: "John", lastName: "Smith", dob: new Date(2000, 1, 1), country: "Australia", phoneNumber: "xxx-0000-0000"}
+                ]}
+            >
+                <TableHeader textAlign={"center"}>
+                    <TableCell weighting={0.3}>
+                        First Name
+                    </TableCell>
+                    <TableCell weighting={0.3}>
+                        Last Name
+                    </TableCell>
+                    <TableCell>
+                        DOB
+                    </TableCell>
+                    <TableCell>
+                        Country
+                    </TableCell>
+                    <TableCell>
+                        Phone Number
+                    </TableCell>
+                </TableHeader>
+                <TableBody>
+                    <DataTableCell weighting={0.3} getContent={(r) => r.firstName}/>
+                    <DataTableCell weighting={0.3} getContent={(r) => r.lastName}/>
+                    <DataTableCell getContent={(r) => r.dob.toLocaleString()}/>
+                    <DataTableCell getContent={(r) => r.country}/>
+                    <DataTableCell getContent={(r) => r.phoneNumber}/>
+                </TableBody>
+            </Table>
+        </Page>
+    </Document>
+</PDFViewer>
 ```
 
 ## Running Locally

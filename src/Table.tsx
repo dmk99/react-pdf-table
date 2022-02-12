@@ -12,10 +12,10 @@ interface TableProps {
 
 export class Table extends React.PureComponent<TableProps> {
     render() {
-        let tableHeader: JSX.Element = null;
-        let tableBody: JSX.Element = null;
+        let tableHeader: React.ReactElement = null;
+        let tableBody: React.ReactElement = null;
 
-        React.Children.forEach(this.props.children, (c: any) => {
+        React.Children.forEach(this.props.children, (c: React.ReactElement) => {
             if (c?.type === TableHeader) {
                 tableHeader = c;
             } else if (c?.type === TableBody) {
@@ -23,12 +23,16 @@ export class Table extends React.PureComponent<TableProps> {
             }
         });
 
+        if(tableBody === null) {
+            tableBody = React.createElement(TableBody);
+        }
+
         tableBody = React.cloneElement(tableBody, {
-            data: tableBody.props.data ?? this.props.data ?? [],
+            data: tableBody?.props?.data ?? this.props.data ?? [],
             renderTopBorder: !tableHeader,
-            zebra: tableBody.props.zebra ?? this.props.zebra ?? false,
-            evenRowColor: tableBody.props.evenRowColor ?? this.props.evenRowColor ?? '',
-            oddRowColor: tableBody.props.oddRowColor ?? this.props.oddRowColor ?? '',
+            zebra: tableBody?.props?.zebra ?? this.props.zebra ?? false,
+            evenRowColor: tableBody?.props?.evenRowColor ?? this.props.evenRowColor ?? '',
+            oddRowColor: tableBody?.props?.oddRowColor ?? this.props.oddRowColor ?? '',
         });
 
         return (

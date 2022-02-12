@@ -13,10 +13,6 @@ module.exports = ({ config }) => {
       {
         loader: require.resolve('ts-loader'),
       },
-      // Optional
-      {
-        loader: require.resolve('react-docgen-typescript-loader'),
-      },
     ],
   });
 
@@ -24,7 +20,7 @@ module.exports = ({ config }) => {
     test: /\.stories\.jsx?$/,
     loaders: [
       {
-        loader: require.resolve('@storybook/addon-storysource/loader'),
+        loader: require.resolve('@storybook/source-loader'),
         options: { parser: 'typescript' },
       }
     ],

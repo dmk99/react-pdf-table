@@ -18,7 +18,8 @@
     "removeComments": true,
     "strict": false,
     "rootDirs": ["src", "stories"],
-    "baseUrl": "src"
+    "baseUrl": "src",
+    "skipLibCheck": true
   },
   "include": [
     "./src/**/*.tsx",

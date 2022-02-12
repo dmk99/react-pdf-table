@@ -8,21 +8,19 @@ export interface TableBodyProps extends TableRowProps {
      */
     data?: any[];
     zebra?: boolean;
-}
 
-// This interface adds a flag to indicate if we should render the top border,
-// thus allowing us to render it in the event that no
-// header rows were present in the table.
-interface InternalBodyProps extends TableBodyProps {
+    // This interface adds a flag to indicate if we should render the top border,
+    // thus allowing us to render it in the event that no
+    // header rows were present in the table.
     renderTopBorder?: boolean
 }
 
 /**
  * This component displays the data as {@see TableRow}s.
  */
-export class TableBody extends React.PureComponent<InternalBodyProps> {
+export class TableBody extends React.PureComponent<TableBodyProps> {
     render() {
-        const rowCells: any[] = React.Children.toArray(this.props.children);
+        const rowCells: React.ReactNode[] = React.Children.toArray(this.props.children);
         const {includeLeftBorder, includeBottomBorder, includeRightBorder} = getDefaultBorderIncludes(this.props);
         const dataRows = this.props.data ?? [];
 
@@ -31,7 +29,7 @@ export class TableBody extends React.PureComponent<InternalBodyProps> {
                 <TableRow
                     {...this.props}
                     key={rowIndex}
-                    even={rowIndex%2===0}
+                    even={rowIndex % 2 === 0}
                     data={data}
                     includeLeftBorder={includeLeftBorder}
                     includeBottomBorder={includeBottomBorder}
