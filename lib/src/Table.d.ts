@@ -1,11 +1,12 @@
 import * as React from "react";
-interface TableProps {
-    data?: any[];
+export interface ZebraProps {
     zebra?: boolean;
     evenRowColor?: string;
     oddRowColor?: string;
 }
+export interface TableProps extends ZebraProps {
+    data?: any[];
+}
 export declare class Table extends React.PureComponent<TableProps> {
     render(): JSX.Element;
 }
-export {};

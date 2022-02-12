@@ -6,7 +6,7 @@ This component displays the data as {@see TableRow}s.
 
 ## Hierarchy
 
-- `PureComponent`<`InternalBodyProps`\>
+- `PureComponent`<[`TableBodyProps`](../interfaces/TableBodyProps.md)\>
 
   ↳ **`TableBody`**
 
@@ -30,11 +30,11 @@ This component displays the data as {@see TableRow}s.
 
 | Name | Type |
 | :------ | :------ |
-| `props` | `Readonly`<`InternalBodyProps`\> |
+| `props` | `Readonly`<[`TableBodyProps`](../interfaces/TableBodyProps.md)\> |
 
 #### Inherited from
 
-React.PureComponent<InternalBodyProps\>.constructor
+React.PureComponent<TableBodyProps\>.constructor
 
 #### Defined in
 
@@ -50,12 +50,12 @@ node_modules/@types/react/index.d.ts:478
 
 | Name | Type |
 | :------ | :------ |
-| `props` | `InternalBodyProps` |
+| `props` | [`TableBodyProps`](../interfaces/TableBodyProps.md) |
 | `context?` | `any` |
 
 #### Inherited from
 
-React.PureComponent<InternalBodyProps\>.constructor
+React.PureComponent<TableBodyProps\>.constructor
 
 #### Defined in
 
@@ -77,4 +77,4 @@ React.PureComponent.render
 
 #### Defined in
 
-[src/TableBody.tsx:24](https://github.com/dmk99/react-pdf-table/blob/b9a51c5/src/TableBody.tsx#L24)
+[src/TableBody.tsx:22](https://github.com/dmk99/react-pdf-table/blob/bebcafb/src/TableBody.tsx#L22)

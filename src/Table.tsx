@@ -3,11 +3,31 @@ import {TableHeader} from "./TableHeader";
 import {TableBody} from "./TableBody";
 import {View} from "@react-pdf/renderer";
 
-interface TableProps {
-    data?: any[];
+export interface ZebraProps {
+    /**
+     * Whether to display alternate row colours.
+     * Defaults to false.
+     */
     zebra?: boolean;
+
+    /**
+     * The even row colour when {@see zebra} is true.
+     * Defaults to lightgray if not defined.
+     */
     evenRowColor?: string;
+
+    /**
+     * The odd row colour when {@see zebra} is true.
+     * Defaults to transparent or '' if not defined.
+     */
     oddRowColor?: string;
+}
+
+export interface TableProps extends ZebraProps {
+    /**
+     * The table data to display.
+     */
+    data?: any[];
 }
 
 export class Table extends React.PureComponent<TableProps> {

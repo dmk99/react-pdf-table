@@ -6,7 +6,7 @@ This component displays the titles for the rows.
 
 ## Hierarchy
 
-- `PureComponent`<`TableHeaderProps`\>
+- `PureComponent`<[`TableHeaderProps`](../interfaces/TableHeaderProps.md)\>
 
   ↳ **`TableHeader`**
 
@@ -30,7 +30,7 @@ This component displays the titles for the rows.
 
 | Name | Type |
 | :------ | :------ |
-| `props` | `Readonly`<`TableHeaderProps`\> |
+| `props` | `Readonly`<[`TableHeaderProps`](../interfaces/TableHeaderProps.md)\> |
 
 #### Inherited from
 
@@ -50,7 +50,7 @@ node_modules/@types/react/index.d.ts:478
 
 | Name | Type |
 | :------ | :------ |
-| `props` | `TableHeaderProps` |
+| `props` | [`TableHeaderProps`](../interfaces/TableHeaderProps.md) |
 | `context?` | `any` |
 
 #### Inherited from
@@ -77,4 +77,4 @@ React.PureComponent.render
 
 #### Defined in
 
-[src/TableHeader.tsx:12](https://github.com/dmk99/react-pdf-table/blob/b9a51c5/src/TableHeader.tsx#L12)
+[src/TableHeader.tsx:12](https://github.com/dmk99/react-pdf-table/blob/bebcafb/src/TableHeader.tsx#L12)

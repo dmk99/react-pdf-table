@@ -1,47 +1,44 @@
-[@david.kucsai/react-pdf-table](../README.md) / [Exports](../modules.md) / TableBodyProps
+[@david.kucsai/react-pdf-table](../README.md) / [Exports](../modules.md) / TableHeaderProps
 
-# Interface: TableBodyProps
+# Interface: TableHeaderProps
 
 ## Hierarchy
 
 - `TableRowProps`
 
-- `Pick`<[`ZebraProps`](ZebraProps.md), ``"zebra"``\>
-
-  ↳ **`TableBodyProps`**
+  ↳ **`TableHeaderProps`**
 
 ## Table of contents
 
 ### Properties
 
-- [data](TableBodyProps.md#data)
-- [even](TableBodyProps.md#even)
-- [evenRowColor](TableBodyProps.md#evenrowcolor)
-- [fontSize](TableBodyProps.md#fontsize)
-- [includeBottomBorder](TableBodyProps.md#includebottomborder)
-- [includeLeftBorder](TableBodyProps.md#includeleftborder)
-- [includeRightBorder](TableBodyProps.md#includerightborder)
-- [includeTopBorder](TableBodyProps.md#includetopborder)
-- [oddRowColor](TableBodyProps.md#oddrowcolor)
-- [renderTopBorder](TableBodyProps.md#rendertopborder)
-- [textAlign](TableBodyProps.md#textalign)
-- [zebra](TableBodyProps.md#zebra)
+- [data](TableHeaderProps.md#data)
+- [even](TableHeaderProps.md#even)
+- [evenRowColor](TableHeaderProps.md#evenrowcolor)
+- [fontSize](TableHeaderProps.md#fontsize)
+- [includeBottomBorder](TableHeaderProps.md#includebottomborder)
+- [includeLeftBorder](TableHeaderProps.md#includeleftborder)
+- [includeRightBorder](TableHeaderProps.md#includerightborder)
+- [includeTopBorder](TableHeaderProps.md#includetopborder)
+- [oddRowColor](TableHeaderProps.md#oddrowcolor)
+- [textAlign](TableHeaderProps.md#textalign)
+- [zebra](TableHeaderProps.md#zebra)
 
 ## Properties
 
 ### data
 
-• `Optional` **data**: `any`[]
+• `Optional` **data**: `any`
 
-The data associated with the table.
+Any data associated, relevant if the parent is a {@see DataTableCell}.
 
-#### Overrides
+#### Inherited from
 
 TableRowProps.data
 
 #### Defined in
 
-[src/TableBody.tsx:10](https://github.com/dmk99/react-pdf-table/blob/bebcafb/src/TableBody.tsx#L10)
+[src/TableRow.tsx:22](https://github.com/dmk99/react-pdf-table/blob/bebcafb/src/TableRow.tsx#L22)
 
 ___
 
@@ -170,16 +167,6 @@ TableRowProps.oddRowColor
 #### Defined in
 
 [src/TableRow.tsx:42](https://github.com/dmk99/react-pdf-table/blob/bebcafb/src/TableRow.tsx#L42)
-
-___
-
-### renderTopBorder
-
-• `Optional` **renderTopBorder**: `boolean`
-
-#### Defined in
-
-[src/TableBody.tsx:15](https://github.com/dmk99/react-pdf-table/blob/bebcafb/src/TableBody.tsx#L15)
 
 ___
 

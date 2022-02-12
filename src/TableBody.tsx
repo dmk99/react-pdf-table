@@ -1,13 +1,13 @@
 import {TableRow, TableRowProps} from "./TableRow";
 import * as React from "react";
 import {getDefaultBorderIncludes} from "./Utils";
+import {ZebraProps} from "./Table";
 
-export interface TableBodyProps extends TableRowProps {
+export interface TableBodyProps extends TableRowProps, Pick<ZebraProps, "zebra"> {
     /**
      * The data associated with the table.
      */
     data?: any[];
-    zebra?: boolean;
 
     // This interface adds a flag to indicate if we should render the top border,
     // thus allowing us to render it in the event that no

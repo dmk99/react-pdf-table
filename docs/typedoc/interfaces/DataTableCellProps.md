@@ -1,36 +1,55 @@
-[@david.kucsai/react-pdf-table](../README.md) / [Exports](../modules.md) / TableCellProps
+[@david.kucsai/react-pdf-table](../README.md) / [Exports](../modules.md) / DataTableCellProps
 
-# Interface: TableCellProps
+# Interface: DataTableCellProps
 
 ## Hierarchy
 
-- [`TableBorder`](TableBorder.md)
+- [`TableCellProps`](TableCellProps.md)
 
-  ↳ **`TableCellProps`**
-
-  ↳↳ [`DataTableCellProps`](DataTableCellProps.md)
+  ↳ **`DataTableCellProps`**
 
 ## Table of contents
 
 ### Properties
 
-- [fontSize](TableCellProps.md#fontsize)
-- [includeBottomBorder](TableCellProps.md#includebottomborder)
-- [includeLeftBorder](TableCellProps.md#includeleftborder)
-- [includeRightBorder](TableCellProps.md#includerightborder)
-- [includeTopBorder](TableCellProps.md#includetopborder)
-- [isHeader](TableCellProps.md#isheader)
-- [style](TableCellProps.md#style)
-- [textAlign](TableCellProps.md#textalign)
-- [weighting](TableCellProps.md#weighting)
+- [data](DataTableCellProps.md#data)
+- [fontSize](DataTableCellProps.md#fontsize)
+- [includeBottomBorder](DataTableCellProps.md#includebottomborder)
+- [includeLeftBorder](DataTableCellProps.md#includeleftborder)
+- [includeRightBorder](DataTableCellProps.md#includerightborder)
+- [includeTopBorder](DataTableCellProps.md#includetopborder)
+- [isHeader](DataTableCellProps.md#isheader)
+- [style](DataTableCellProps.md#style)
+- [textAlign](DataTableCellProps.md#textalign)
+- [weighting](DataTableCellProps.md#weighting)
+
+### Methods
+
+- [getContent](DataTableCellProps.md#getcontent)
 
 ## Properties
+
+### data
+
+• `Optional` **data**: `any`
+
+The data associated with the cell.
+
+#### Defined in
+
+[src/DataTableCell.tsx:8](https://github.com/dmk99/react-pdf-table/blob/bebcafb/src/DataTableCell.tsx#L8)
+
+___
 
 ### fontSize
 
 • `Optional` **fontSize**: `string` \| `number`
 
 The font-size to apply to the cell.
+
+#### Inherited from
+
+[TableCellProps](TableCellProps.md).[fontSize](TableCellProps.md#fontsize)
 
 #### Defined in
 
@@ -46,7 +65,7 @@ Include the bottom border. Default true.
 
 #### Inherited from
 
-[TableBorder](TableBorder.md).[includeBottomBorder](TableBorder.md#includebottomborder)
+[TableCellProps](TableCellProps.md).[includeBottomBorder](TableCellProps.md#includebottomborder)
 
 #### Defined in
 
@@ -62,7 +81,7 @@ Include the left border. Default true.
 
 #### Inherited from
 
-[TableBorder](TableBorder.md).[includeLeftBorder](TableBorder.md#includeleftborder)
+[TableCellProps](TableCellProps.md).[includeLeftBorder](TableCellProps.md#includeleftborder)
 
 #### Defined in
 
@@ -78,7 +97,7 @@ Include the right border. Default true.
 
 #### Inherited from
 
-[TableBorder](TableBorder.md).[includeRightBorder](TableBorder.md#includerightborder)
+[TableCellProps](TableCellProps.md).[includeRightBorder](TableCellProps.md#includerightborder)
 
 #### Defined in
 
@@ -94,7 +113,7 @@ Include the top border. Default true.
 
 #### Inherited from
 
-[TableBorder](TableBorder.md).[includeTopBorder](TableBorder.md#includetopborder)
+[TableCellProps](TableCellProps.md).[includeTopBorder](TableCellProps.md#includetopborder)
 
 #### Defined in
 
@@ -108,6 +127,10 @@ ___
 
 Whether this is a header cell or not. If not defined it will be false.
 
+#### Inherited from
+
+[TableCellProps](TableCellProps.md).[isHeader](TableCellProps.md#isheader)
+
 #### Defined in
 
 [src/TableCell.tsx:51](https://github.com/dmk99/react-pdf-table/blob/bebcafb/src/TableCell.tsx#L51)
@@ -120,6 +143,10 @@ ___
 
 Extra styling to apply. These will override existing style with the same key.
 
+#### Inherited from
+
+[TableCellProps](TableCellProps.md).[style](TableCellProps.md#style)
+
 #### Defined in
 
 [src/TableCell.tsx:41](https://github.com/dmk99/react-pdf-table/blob/bebcafb/src/TableCell.tsx#L41)
@@ -131,6 +158,10 @@ ___
 • `Optional` **textAlign**: ``"left"`` \| ``"center"`` \| ``"right"``
 
 How to align the text
+
+#### Inherited from
+
+[TableCellProps](TableCellProps.md).[textAlign](TableCellProps.md#textalign)
 
 #### Defined in
 
@@ -145,6 +176,32 @@ ___
 The weighting of a cell based on the flex layout style.
 This value is between 0..1, if not specified 1 is assumed, this will take up the remaining available space.
 
+#### Inherited from
+
+[TableCellProps](TableCellProps.md).[weighting](TableCellProps.md#weighting)
+
 #### Defined in
 
 [src/TableCell.tsx:36](https://github.com/dmk99/react-pdf-table/blob/bebcafb/src/TableCell.tsx#L36)
+
+## Methods
+
+### getContent
+
+▸ **getContent**(`data`): `ReactNode` \| `Element`
+
+The content to display for this cell.
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `data` | `any` | the data passed in. |
+
+#### Returns
+
+`ReactNode` \| `Element`
+
+#### Defined in
+
+[src/DataTableCell.tsx:14](https://github.com/dmk99/react-pdf-table/blob/bebcafb/src/DataTableCell.tsx#L14)

@@ -1,7 +1,7 @@
 import * as React from "react";
 import {TableCell, TableCellProps} from "./TableCell";
 
-interface DataTableCellProps extends TableCellProps {
+export interface DataTableCellProps extends TableCellProps {
     /**
      * The data associated with the cell.
      */

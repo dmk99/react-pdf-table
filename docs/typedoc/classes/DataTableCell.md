@@ -6,7 +6,7 @@ This component is used to display data in the the {@see TableRow} component.
 
 ## Hierarchy
 
-- `PureComponent`<`DataTableCellProps`\>
+- `PureComponent`<[`DataTableCellProps`](../interfaces/DataTableCellProps.md)\>
 
   ↳ **`DataTableCell`**
 
@@ -30,7 +30,7 @@ This component is used to display data in the the {@see TableRow} component.
 
 | Name | Type |
 | :------ | :------ |
-| `props` | `Readonly`<`DataTableCellProps`\> |
+| `props` | `Readonly`<[`DataTableCellProps`](../interfaces/DataTableCellProps.md)\> |
 
 #### Inherited from
 
@@ -50,7 +50,7 @@ node_modules/@types/react/index.d.ts:478
 
 | Name | Type |
 | :------ | :------ |
-| `props` | `DataTableCellProps` |
+| `props` | [`DataTableCellProps`](../interfaces/DataTableCellProps.md) |
 | `context?` | `any` |
 
 #### Inherited from
@@ -77,4 +77,4 @@ React.PureComponent.render
 
 #### Defined in
 
-[src/DataTableCell.tsx:21](https://github.com/dmk99/react-pdf-table/blob/b9a51c5/src/DataTableCell.tsx#L21)
+[src/DataTableCell.tsx:21](https://github.com/dmk99/react-pdf-table/blob/bebcafb/src/DataTableCell.tsx#L21)

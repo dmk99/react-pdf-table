@@ -2,7 +2,7 @@ import * as React from "react";
 import {getDefaultBorderIncludes} from "./Utils";
 import {TableRow, TableRowProps} from "./TableRow";
 
-interface TableHeaderProps extends TableRowProps {
+export interface TableHeaderProps extends TableRowProps {
 }
 
 /**

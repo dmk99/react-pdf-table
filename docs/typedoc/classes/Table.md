@@ -4,7 +4,7 @@
 
 ## Hierarchy
 
-- `PureComponent`<`TableProps`\>
+- `PureComponent`<[`TableProps`](../interfaces/TableProps.md)\>
 
   ↳ **`Table`**
 
@@ -28,7 +28,7 @@
 
 | Name | Type |
 | :------ | :------ |
-| `props` | `Readonly`<`TableProps`\> |
+| `props` | `Readonly`<[`TableProps`](../interfaces/TableProps.md)\> |
 
 #### Inherited from
 
@@ -48,7 +48,7 @@ node_modules/@types/react/index.d.ts:478
 
 | Name | Type |
 | :------ | :------ |
-| `props` | `TableProps` |
+| `props` | [`TableProps`](../interfaces/TableProps.md) |
 | `context?` | `any` |
 
 #### Inherited from
@@ -75,4 +75,4 @@ React.PureComponent.render
 
 #### Defined in
 
-[src/Table.tsx:14](https://github.com/dmk99/react-pdf-table/blob/b9a51c5/src/Table.tsx#L14)
+[src/Table.tsx:34](https://github.com/dmk99/react-pdf-table/blob/bebcafb/src/Table.tsx#L34)
