@@ -71,6 +71,10 @@ export class TableCell extends React.PureComponent<TableCellProps> {
             content = (
                 <Text>{this.props.children.toString()}</Text>
             );
+        } elseif (Array.isArray(this.props.children) {
+            content = (
+                <Text>{this.props.children.join('')}</Text>   
+            );          
         } else {
             content = this.props.children;
         }
