@@ -15,9 +15,9 @@
   "author": "David Kucsai",
   "license": "MIT",
   "peerDependencies": {
-    "@react-pdf/renderer": "^1.6.8",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "@react-pdf/renderer": "^1.6.8 || ^2.0.0",
+    "react": "^16.8.6 || ^17.0.0 || ^18.0.0",
+    "react-dom": "^16.8.6 || ^17.0.0 || ^18.0.0"
   },
   "devDependencies": {
     "@react-pdf/renderer": "^1.6.8",
