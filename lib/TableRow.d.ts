@@ -9,6 +9,7 @@ export interface TableRowProps extends TableBorder {
     even?: boolean;
     evenRowColor?: string;
     oddRowColor?: string;
+    children?: React.ReactNode
 }
 export declare class TableRow extends React.PureComponent<Partial<TableBodyProps>> {
     render(): JSX.Element;
