@@ -12,6 +12,7 @@ export interface TableCellProps extends TableBorder {
     textAlign?: "left" | "center" | "right";
     isHeader?: boolean;
     fontSize?: number | string;
+    children?: React.ReactNode
 }
 export declare class TableCell extends React.PureComponent<TableCellProps> {
     render(): JSX.Element;
