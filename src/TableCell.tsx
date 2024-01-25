@@ -38,7 +38,7 @@ export interface TableCellProps extends TableBorder {
     /**
      * Extra styling to apply. These will override existing style with the same key.
      */
-    style?: ReactPDF.Style | ReactPDF.Style[];
+    style?: ReactPDF.Styles | ReactPDF.Styles[];
 
     /**
      * How to align the text
@@ -76,7 +76,7 @@ export class TableCell extends React.PureComponent<TableCellProps> {
         }
 
         const {includeRightBorder} = getDefaultBorderIncludes(this.props);
-        const defaultStyle: ReactPDF.Style = {
+        const defaultStyle: ReactPDF.Styles = {
             flex: this.props.weighting ?? 1,
             // @ts-ignore
             justifyContent: "stretch",
@@ -87,7 +87,7 @@ export class TableCell extends React.PureComponent<TableCellProps> {
             whiteSpace: "pre-wrap"
         };
 
-        const mergedStyles: ReactPDF.Style[] = [
+        const mergedStyles: ReactPDF.Styles[] = [
             defaultStyle,
             ...transformToArray(this.props.style)
         ];
