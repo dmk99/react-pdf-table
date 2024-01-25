@@ -34,6 +34,8 @@ export interface TableProps extends ZebraProps {
      * Otherwise assumed to be false.
      */
     isNested?: boolean;
+
+    children?: React.ReactNode
 }
 
 export class Table extends React.PureComponent<TableProps> {

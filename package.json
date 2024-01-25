@@ -5,7 +5,7 @@
   "main": "./lib/index.js",
   "scripts": {
     "generate-barrels": "barrelsby -d src --delete -e TableRow.tsx",
-    "build": "rm -rf ./lib/* && npm run generate-barrels && tsc && npm run build-storybook && npm run build-doco",
+    "build": "rm -rf ./lib/* && npm run generate-barrels && tsc",
     "recompile": "tsc",
     "prepublish": "npm run build",
     "storybook": "start-storybook -p 6006",
@@ -15,12 +15,12 @@
   "author": "David Kucsai",
   "license": "MIT",
   "peerDependencies": {
-    "@react-pdf/renderer": "^1.6.8",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "@react-pdf/renderer": "^3.3.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@react-pdf/renderer": "^1.6.8",
+    "@react-pdf/renderer": "^3.3.1",
     "@storybook/addon-actions": "^6.4.19",
     "@storybook/addon-info": "^5.3.21",
     "@storybook/addon-knobs": "^5.3.7",
@@ -48,9 +48,9 @@
     "html-webpack-plugin": "^3.2.0",
     "jsdom": "^15.1.1",
     "mini-css-extract-plugin": "^0.7.0",
-    "react": "^16.8.6",
+    "react": "^18.2.0",
     "@storybook-addons/react-docgen-typescript-loader": "^3.8.0",
-    "react-dom": "^16.8.6",
+    "react-dom": "^18.2.0",
     "regenerator-runtime": "^0.13.2",
     "sinon": "^7.3.2",
     "storybook": "^6.4.19",

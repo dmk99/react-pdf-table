@@ -13,7 +13,9 @@ export interface TableBodyProps extends TableRowProps, Pick<ZebraProps, "zebra">
      * Allows control of the very top border of the TableBody to be toggled on and off
      * if there is no header.
      */
-    renderTopBorder?: boolean
+    renderTopBorder?: boolean;
+
+    children?: React.ReactNode;
 }
 
 /**
