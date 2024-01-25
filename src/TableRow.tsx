@@ -40,6 +40,8 @@ export interface TableRowProps extends TableBorder {
      * Specify the color of odd rows
      */
     oddRowColor?: string;
+
+    children?: React.ReactNode;
 }
 
 /**
