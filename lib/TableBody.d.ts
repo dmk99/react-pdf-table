@@ -4,6 +4,7 @@ import { ZebraProps } from "./Table";
 export interface TableBodyProps extends TableRowProps, Pick<ZebraProps, "zebra"> {
     data?: any[];
     renderTopBorder?: boolean;
+    children?: React.ReactNode;
 }
 export declare class TableBody extends React.PureComponent<TableBodyProps> {
     render(): JSX.Element[];
